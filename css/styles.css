@@ -1,4 +1,5 @@
-@import url("./styles/contato.css");
+@import url("./contato.css");
+@import url("./hero.css");
 
 * {
   margin: 0;
