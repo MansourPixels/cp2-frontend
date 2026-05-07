@@ -1,0 +1,110 @@
+/* Seção Unidades - Galeria de Espaços */
+.unidades-titulo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  color: #c8872a;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.unidades-galeria {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.unidade-card {
+  background: #1a1207;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #0002;
+  overflow: hidden;
+  max-width: 340px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.unidade-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 4px 24px #0004;
+}
+
+.unidade-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 3px solid #c8872a;
+}
+
+.unidade-info {
+  padding: 1.2rem 1rem 1.5rem 1rem;
+  text-align: center;
+}
+
+.unidade-info h3 {
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.unidade-info p {
+  color: #b3ad9f;
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+
+.unidade-info a {
+  color: #c8872a;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* --- Botão de galeria das unidades --- */
+.toggle-galeria {
+  display: block;
+  margin: 0 auto 2rem auto;
+  padding: 0.7rem 2.2rem;
+  background: #c8872a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px #0002;
+}
+.toggle-galeria:hover {
+  background: #a06b1a;
+  transform: scale(1.04);
+}
+.unidades-galeria {
+  transition: all 0.3s;
+}
+.unidade-imagens {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 900px) {
+  .unidades-galeria {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .toggle-galeria {
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+  }
+  .unidade-imagens {
+    gap: 6px;
+  }
+}
