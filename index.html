@@ -62,41 +62,6 @@
         />
       </section>
       <section id="sobre"></section>
-      <section id="unidades">
-  <h2 class="unidades-titulo">Nossos Espaços</h2>
-  <div class="unidades-galeria">
-    <!-- Cambuci -->
-    <div class="unidade-card">
-      <div class="unidade-info">
-        <h3>Cambuci</h3>
-        <p>Av. Lins de Vasconcelos, 1333</p>
-        <p>Tel: <a href="tel:+551132090664">3209-0664</a></p>
-        <button class="toggle-galeria" onclick="toggleGaleria(this)">Ver fotos</button>
-      </div>
-      <div class="unidade-imagens" style="display:none; flex-direction: column; gap: 10px;">
-        <img src="./imagens/1.jpg" alt="Fachada Cambuci" class="unidade-img" />
-        <img src="./imagens/3.jpg" alt="Ambiente interno Cambuci" class="unidade-img" />
-        <img src="./imagens/4.jpg" alt="Ambiente externo Cambuci" class="unidade-img" />
-        <img src="./imagens/7.jpg" alt="Detalhe Cambuci" class="unidade-img" />
-      </div>
-    </div>
-    <!-- Aclimação -->
-    <div class="unidade-card">
-      <div class="unidade-info">
-        <h3>Aclimação</h3>
-        <p>Av. da Aclimação, 850</p>
-        <p>Tel: <a href="tel:+551132714007">3271-4007</a></p>
-        <button class="toggle-galeria" onclick="toggleGaleria(this)">Ver fotos</button>
-      </div>
-      <div class="unidade-imagens" style="display:none; flex-direction: column; gap: 10px;">
-        <img src="./imagens/2.jpg" alt="Fachada Aclimação" class="unidade-img" />
-        <img src="./imagens/5.jpg" alt="Ambiente interno Aclimação" class="unidade-img" />
-        <img src="./imagens/6.jpg" alt="Ambiente externo Aclimação" class="unidade-img" />
-        <img src="./imagens/8.jpg" alt="Detalhe Aclimação" class="unidade-img" />
-      </div>
-    </div>
-  </div>
-</section>
       <section id="contato">
         <div class="contato-container">
           <div class="contato-info">
@@ -160,6 +125,57 @@
               <button type="reset" class="btn btn-reset">Limpar</button>
             </div>
           </form>
+        </div>
+      </section>
+      <section id="unidades">
+        <h2 class="unidades-titulo">Nossas Unidades</h2>
+        <div class="unidades-galeria">
+          <div class="unidade-card">
+            <div class="unidade-info">
+              <h3>Cambuci</h3>
+              <p>Av. Lins de Vasconcelos, 1333</p>
+              <p>Tel: <a href="tel:+551132090664">3209-0664</a></p>
+              <button class="toggle-galeria" onclick="toggleGaleria(this)">Ver fotos</button>
+            </div>
+            <div class="unidade-imagens">
+              <div class="galeria-carousel">
+                <button class="nav-seta nav-esquerda" onclick="mudarImagem(this, -1)">‹</button>
+                <div class="carousel-imagem">
+                  <img src="./imagens/1.jpg" alt="Fachada Cambuci" class="foto-carousel" />
+                </div>
+                <button class="nav-seta nav-direita" onclick="mudarImagem(this, 1)">›</button>
+              </div>
+              <div class="indicadores">
+                <span class="indicador ativo" onclick="irParaImagem(this)"></span>
+                <span class="indicador" onclick="irParaImagem(this)"></span>
+                <span class="indicador" onclick="irParaImagem(this)"></span>
+                <span class="indicador" onclick="irParaImagem(this)"></span>
+              </div>
+            </div>
+          </div>
+          <div class="unidade-card">
+            <div class="unidade-info">
+              <h3>Aclimação</h3>
+              <p>Av. da Aclimação, 850</p>
+              <p>Tel: <a href="tel:+551132714007">3271-4007</a></p>
+              <button class="toggle-galeria" onclick="toggleGaleria(this)">Ver fotos</button>
+            </div>
+            <div class="unidade-imagens">
+              <div class="galeria-carousel">
+                <button class="nav-seta nav-esquerda" onclick="mudarImagem(this, -1)">‹</button>
+                <div class="carousel-imagem">
+                  <img src="./imagens/2.jpg" alt="Fachada Aclimação" class="foto-carousel" />
+                </div>
+                <button class="nav-seta nav-direita" onclick="mudarImagem(this, 1)">›</button>
+              </div>
+              <div class="indicadores">
+                <span class="indicador ativo" onclick="irParaImagem(this)"></span>
+                <span class="indicador" onclick="irParaImagem(this)"></span>
+                <span class="indicador" onclick="irParaImagem(this)"></span>
+                <span class="indicador" onclick="irParaImagem(this)"></span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section id="cardapio"></section>
