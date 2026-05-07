@@ -16,89 +16,198 @@
 }
 
 .unidade-card {
-  background: #1a1207;
-  border-radius: 12px;
-  box-shadow: 0 2px 16px #0002;
+  background: linear-gradient(135deg, #1a1207 0%, #2d2414 100%);
+  border-radius: 16px;
   overflow: hidden;
-  max-width: 340px;
+  max-width: 380px;
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  transition: transform 0.2s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(200, 135, 42, 0.2);
 }
 
 .unidade-card:hover {
-  transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 4px 24px #0004;
-}
-
-.unidade-img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-bottom: 3px solid #c8872a;
+  transform: translateY(-8px);
 }
 
 .unidade-info {
-  padding: 1.2rem 1rem 1.5rem 1rem;
+  padding: 1.5rem;
   text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .unidade-info h3 {
   font-family: 'Playfair Display', serif;
   color: #fff;
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .unidade-info p {
   color: #b3ad9f;
-  font-size: 1rem;
-  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
 }
 
 .unidade-info a {
   color: #c8872a;
   text-decoration: none;
   font-weight: 600;
+  transition: color 0.2s;
+}
+
+.unidade-info a:hover {
+  color: #e8a542;
+}
+
+/* --- Container de galeria --- */
+.unidade-imagens {
+  position: relative;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  background: #0f0a05;
+}
+
+.unidade-imagens.ativa {
+  max-height: 400px;
+  opacity: 1;
+}
+
+.galeria-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.carousel-imagem {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carousel-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.carousel-imagem img:hover {
+  transform: scale(1.05);
+}
+
+.nav-seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(200, 135, 42, 0.8);
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.nav-seta:hover {
+  background: #c8872a;
+  transform: translateY(-50%) scale(1.15);
+}
+
+.nav-esquerda {
+  left: 0.5rem;
+}
+
+.nav-direita {
+  right: 0.5rem;
+}
+
+.indicadores {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  padding: 0 1rem 1rem;
+  flex-wrap: wrap;
+}
+
+.indicador {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(200, 135, 42, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(200, 135, 42, 0.5);
+}
+
+.indicador.ativo {
+  background: #c8872a;
+  width: 30px;
+  border-radius: 5px;
 }
 
 /* --- Botão de galeria das unidades --- */
 .toggle-galeria {
   display: block;
-  margin: 0 auto 2rem auto;
-  padding: 0.7rem 2.2rem;
-  background: #c8872a;
+  margin: 1rem auto;
+  padding: 0.8rem 2.5rem;
+  background: linear-gradient(135deg, #c8872a 0%, #a06b1a 100%);
   color: #fff;
   border: none;
   border-radius: 8px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 700;
   cursor: pointer;
-  transition: background 0.2s, transform 0.2s;
-  box-shadow: 0 2px 8px #0002;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
+
 .toggle-galeria:hover {
-  background: #a06b1a;
-  transform: scale(1.04);
+  transform: scale(1.08);
 }
-.unidades-galeria {
-  transition: all 0.3s;
+
+.toggle-galeria:active {
+  transform: scale(0.95);
 }
-.unidade-imagens {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+
 @media (max-width: 900px) {
   .unidades-galeria {
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;
   }
+  
+  .carousel-imagem {
+    height: 240px;
+  }
+  
+  .nav-seta {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+  }
 }
+
 @media (max-width: 600px) {
   .toggle-galeria {
     font-size: 1rem;
