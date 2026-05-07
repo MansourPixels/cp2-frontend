@@ -1,0 +1,115 @@
+section#sobre {
+  background-color: #2c1a0a;
+  padding: 5rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+section#sobre::before,
+section#sobre::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #c8872a55, transparent);
+}
+
+section#sobre::before {
+  top: 0;
+}
+
+section#sobre::after {
+  bottom: 0;
+}
+
+.sobre-bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 11rem;
+  font-weight: 700;
+  color: #ffffff04;
+  letter-spacing: 0.3em;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+.sobre-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.sobre-label {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #c8872a;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #c8872a44;
+}
+
+section#sobre h2 {
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #f5ede0;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.sobre-divider {
+  width: 3rem;
+  height: 2px;
+  background-color: #c8872a;
+  margin-bottom: 1.5rem;
+}
+
+section#sobre p {
+  font-size: 0.9rem;
+  line-height: 1.85;
+  color: #b3ad9f;
+}
+
+.sobre-right {
+  border-left: 1px solid #c8872a22;
+  padding-left: 4rem;
+}
+
+.sobre-stat {
+  padding: 1.75rem 0;
+  border-bottom: 1px solid #c8872a18;
+}
+
+.sobre-stat:last-child {
+  border-bottom: none;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #c8872a;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.03em;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #7a6e62;
+}
