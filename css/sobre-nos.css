@@ -113,3 +113,9 @@ section#sobre p {
   letter-spacing: 0.12em;
   color: #7a6e62;
 }
+
+@media (max-width: 768px) {
+  .sobre-container {
+    grid-template-columns: 1fr;
+  }
+}

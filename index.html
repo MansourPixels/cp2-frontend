@@ -1,16 +1,21 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lanches Mansour</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lanches Mansour</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet" />
+    <link
+      href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./css/styles.css" />
     <script src="./scripts/script.js" defer></script>
@@ -67,26 +72,37 @@
         <div class="sobre-container">
           <div class="sobre-left">
             <span class="sobre-label">Nossa História</span>
-            <h2>Sobre<br>Nós</h2>
+            <h2>Sobre<br />Nós</h2>
             <div class="sobre-divider"></div>
-            <p>Há 14 anos a Lanches Mansour vem conquistando cada vez mais clientes fiéis e satisfeitos.
-              A qualidade de nossos produtos vem desde a fabricação, preparação até o atendimento ao cliente.
-              Venha provar nosso delicioso Hamburguer e Maionese de fabricação própria,
-              combinando os melhores ingredientes em seus lanches. A lanchonete Mansour é
-              sem dúvida uma das melhores de São Paulo.
+            <p>
+              Há 14 anos a Lanches Mansour vem conquistando cada vez mais
+              clientes fiéis e satisfeitos. A qualidade de nossos produtos vem
+              desde a fabricação, preparação até o atendimento ao cliente. Venha
+              provar nosso delicioso Hamburguer e Maionese de fabricação
+              própria, combinando os melhores ingredientes em seus lanches. A
+              lanchonete Mansour é sem dúvida uma das melhores de São Paulo.
             </p>
           </div>
           <div class="sobre-right">
             <div class="sobre-stat">
-              <span class="stat-number">14</span>
+              <span class="stat-number">
+                <i class="bxf bx-calendar"></i>
+                14
+              </span>
               <span class="stat-label">Anos de tradição</span>
             </div>
             <div class="sobre-stat">
-              <span class="stat-number">100%</span>
+              <span class="stat-number">
+                <i class="bxf bx-factory"></i>
+                100%
+              </span>
               <span class="stat-label">Fabricação própria</span>
             </div>
             <div class="sobre-stat">
-              <span class="stat-number">#1</span>
+              <span class="stat-number">
+                <i class="bxf bx-medal"></i>
+                #1
+              </span>
               <span class="stat-label">Melhor lanchonete de SP</span>
             </div>
           </div>
@@ -97,62 +113,106 @@
         <div class="contato-container">
           <div class="contato-info">
             <h2>Entre em Contato</h2>
-            <p>Você tem dúvidas ou quer fazer uma sugestão? Nos envie uma mensagem e responderemos o mais breve possível!</p>
-            
+            <p>
+              Você tem dúvidas ou quer fazer uma sugestão? Nos envie uma
+              mensagem e responderemos o mais breve possível!
+            </p>
+
             <div class="info-item">
               <strong>Telefone:</strong>
               <span><a href="tel:+551135552020">(11) 3555-2020</a></span>
             </div>
-            
+
             <div class="info-item">
               <strong>WhatsApp:</strong>
-              <span><a href="https://wa.me/5511987654321" target="_blank" rel="noopener noreferrer">(11) 98765-4321</a></span>
+              <span
+                ><a
+                  href="https://wa.me/5511987654321"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >(11) 98765-4321</a
+                ></span
+              >
             </div>
-            
+
             <div class="info-item">
               <strong>Email:</strong>
-              <span><a href="mailto:contato@lanchesmansour.com.br">contato@lanchesmansour.com.br</a></span>
+              <span
+                ><a href="mailto:contato@lanchesmansour.com.br"
+                  >contato@lanchesmansour.com.br</a
+                ></span
+              >
             </div>
-            
+
             <div class="info-item">
               <strong>Endereço:</strong>
               <span>Rua das Flores, 123 - Aclimação, São Paulo - SP</span>
             </div>
-            
+
             <div class="info-item">
               <strong>Horário:</strong>
               <span>Seg-Qua: 10h-22h | Qui-Dom: 10h-23h</span>
             </div>
           </div>
-          
+
           <form class="contato-form" id="formulario-contato">
             <div class="form-group">
               <label for="nome">Nome Completo</label>
-              <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Seu nome"
+                required
+              />
             </div>
-            
+
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="seu@email.com"
+                required
+              />
             </div>
-            
+
             <div class="form-group">
               <label for="telefone">Telefone</label>
-              <input type="tel" id="telefone" name="telefone" placeholder="(11) 9xxxx-xxxx" />
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(11) 9xxxx-xxxx"
+              />
             </div>
-            
+
             <div class="form-group">
               <label for="assunto">Assunto</label>
-              <input type="text" id="assunto" name="assunto" placeholder="Qual é o assunto?" required />
+              <input
+                type="text"
+                id="assunto"
+                name="assunto"
+                placeholder="Qual é o assunto?"
+                required
+              />
             </div>
-            
+
             <div class="form-group">
               <label for="mensagem">Mensagem</label>
-              <textarea id="mensagem" name="mensagem" placeholder="Deixe sua mensagem..." required></textarea>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                placeholder="Deixe sua mensagem..."
+                required
+              ></textarea>
             </div>
-            
+
             <div class="form-actions">
-              <button type="submit" class="btn btn-submit">Enviar Mensagem</button>
+              <button type="submit" class="btn btn-submit">
+                Enviar Mensagem
+              </button>
               <button type="reset" class="btn btn-reset">Limpar</button>
             </div>
           </form>
@@ -160,11 +220,13 @@
       </section>
 
       <section id="cardapio">
-
         <div class="cardapio-header">
           <span>Nosso Cardápio</span>
           <h2>Feito com <em>amor</em> desde 1980</h2>
-          <p>Ingredientes frescos, receitas que atravessaram gerações e o sabor que São Paulo nunca esqueceu.</p>
+          <p>
+            Ingredientes frescos, receitas que atravessaram gerações e o sabor
+            que São Paulo nunca esqueceu.
+          </p>
         </div>
 
         <div class="cardapio-grid">
@@ -328,18 +390,37 @@
               <h3>Cambuci</h3>
               <p>Av. Lins de Vasconcelos, 1333</p>
               <p>Tel: <a href="tel:+551132090664">3209-0664</a></p>
-              <button class="toggle-galeria" onclick="toggleGaleria(this)">Ver fotos</button>
+              <button class="toggle-galeria" onclick="toggleGaleria(this)">
+                Ver fotos
+              </button>
             </div>
             <div class="unidade-imagens">
               <div class="galeria-carousel">
-                <button class="nav-seta nav-esquerda" onclick="mudarImagem(this, -1)">‹</button>
+                <button
+                  class="nav-seta nav-esquerda"
+                  onclick="mudarImagem(this, -1)"
+                >
+                  ‹
+                </button>
                 <div class="carousel-imagem">
-                  <img src="./imagens/1.jpg" alt="Fachada Cambuci" class="foto-carousel" />
+                  <img
+                    src="./imagens/1.jpg"
+                    alt="Fachada Cambuci"
+                    class="foto-carousel"
+                  />
                 </div>
-                <button class="nav-seta nav-direita" onclick="mudarImagem(this, 1)">›</button>
+                <button
+                  class="nav-seta nav-direita"
+                  onclick="mudarImagem(this, 1)"
+                >
+                  ›
+                </button>
               </div>
               <div class="indicadores">
-                <span class="indicador ativo" onclick="irParaImagem(this)"></span>
+                <span
+                  class="indicador ativo"
+                  onclick="irParaImagem(this)"
+                ></span>
                 <span class="indicador" onclick="irParaImagem(this)"></span>
                 <span class="indicador" onclick="irParaImagem(this)"></span>
                 <span class="indicador" onclick="irParaImagem(this)"></span>
@@ -351,18 +432,37 @@
               <h3>Aclimação</h3>
               <p>Av. da Aclimação, 850</p>
               <p>Tel: <a href="tel:+551132714007">3271-4007</a></p>
-              <button class="toggle-galeria" onclick="toggleGaleria(this)">Ver fotos</button>
+              <button class="toggle-galeria" onclick="toggleGaleria(this)">
+                Ver fotos
+              </button>
             </div>
             <div class="unidade-imagens">
               <div class="galeria-carousel">
-                <button class="nav-seta nav-esquerda" onclick="mudarImagem(this, -1)">‹</button>
+                <button
+                  class="nav-seta nav-esquerda"
+                  onclick="mudarImagem(this, -1)"
+                >
+                  ‹
+                </button>
                 <div class="carousel-imagem">
-                  <img src="./imagens/2.jpg" alt="Fachada Aclimação" class="foto-carousel" />
+                  <img
+                    src="./imagens/2.jpg"
+                    alt="Fachada Aclimação"
+                    class="foto-carousel"
+                  />
                 </div>
-                <button class="nav-seta nav-direita" onclick="mudarImagem(this, 1)">›</button>
+                <button
+                  class="nav-seta nav-direita"
+                  onclick="mudarImagem(this, 1)"
+                >
+                  ›
+                </button>
               </div>
               <div class="indicadores">
-                <span class="indicador ativo" onclick="irParaImagem(this)"></span>
+                <span
+                  class="indicador ativo"
+                  onclick="irParaImagem(this)"
+                ></span>
                 <span class="indicador" onclick="irParaImagem(this)"></span>
                 <span class="indicador" onclick="irParaImagem(this)"></span>
                 <span class="indicador" onclick="irParaImagem(this)"></span>
